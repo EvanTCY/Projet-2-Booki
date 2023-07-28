@@ -1,0 +1,561 @@
+/***********GENERAL contient tout ce qui pourrait faire l'objet d'une modification de plusieurs éléments à la fois, sur toute la page du site********/
+
+
+/***importation de la police "raleway" sur google font***/
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+
+/***mise en place de la police raleway sur toute l'écriture de la page***/
+*{font-family: 'Raleway', sans-serif;}
+
+/***margination pour la version ordinateur***/
+.marginDesktop
+{
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+/***cette balise permet de supprimer la décoration de la balise "a"***/
+.links
+{
+    text-decoration: none; 
+    color: black;
+}
+
+
+
+/***********HEADER contient tout ce qui pourrait faire l'objet d'une modification de plusieurs éléments à la fois, dans le header********/
+
+
+/***(box filtres) représente les "div" qui encadrent les icones et les "input" matérialisant le filtre en lui même***/
+.boxF
+{
+    margin-right: -35px;
+    margin-bottom: 20px;
+}
+.boxF:hover
+{
+    position: relative;
+    bottom: 15px;
+
+}
+
+/***mise en page des icones placées dans les filtres***/
+.bulleFiltres
+{
+    color: #0065FC;
+    background-color: #DEEBFF;
+    font-size: 20px;
+    text-align: center;
+    line-height: 60px;
+    width: 60px;
+    border-radius: 50%;
+
+    float: left;
+    position: relative;
+    left: 60px;
+}
+/***(filtres box) représente les "input" matérialisant le filtres en lui même***/
+.filtresB
+{
+    height: 60px;
+    border-radius: 50px;
+    font-size: 19px;
+    font-weight: bold;
+    background-color: white;
+    border: #D5D5D5 2px solid;
+    padding-right: 20px ;
+    padding-left: 70px;
+}
+
+
+
+/***********MAIN contient tout ce qui pourrait faire l'objet d'une modification de plusieurs éléments à la fois, dans la balise main********/
+
+
+/***permet de changer la couleur des étoiles de notation -- en l'occurence le bleu est remplacé par du gris***/
+.clairStar
+{
+    color: #D5D5D5;
+}
+
+/***mise en page des titres des sections "hébergements à marseille" et "les plus populaires***/
+.h2SectionsHautes
+{
+    margin-top: 40px;
+    margin-left: 40px;
+    margin-bottom: 30px;
+    font-size: 22px;
+}
+
+/***regroupe la mise en page des box des hébergements à marseille***/
+
+/***celui-ci est le conteneur des hébergements***/
+.boxMarseille
+{
+    background-color: white;
+    border-radius: 20px;
+    width: 30%;
+    height: 42%;
+    box-shadow:  0px 0px 20px #CDCDCD ;  
+}
+/***celui-ci met en page les images du conteneur***/
+.imgMarseille
+{
+    width: 96.5%;
+    height: 58%;
+    object-fit: cover;
+    margin-left: 4px;
+    margin-right: 4px;
+    margin-top: 4px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+/***celui-ci les titres***/
+.h3Marseille
+{
+    font-size: 16px;
+    margin-left: 20px;
+    position: relative;
+    bottom: 10px;
+}
+/***celui-ci les prix***/
+.pMarseille
+{
+    font-size: 14px;
+    margin-left: 20px;
+    position: relative;
+    bottom: 24.5px;
+}
+/*** enfin celui-ci la div contenant les étoiles de notation***/
+.notation
+{
+    font-size: 13px;
+    margin-left: 20px;
+    color: #0065FC;
+    position: relative;
+    bottom: 35px;
+    letter-spacing: -1.5px;
+}
+
+
+/***regroupe la mise en page des box des hébergements les plus populaires --- même procédé que ci-dessus***/
+
+.boxPlusPop
+{
+    width: 85%;
+    height: 23%;
+    display: flex;
+    border-radius: 20px;
+    background-color: white;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 30px;
+    box-shadow:  0px 0px 20px #CDCDCD ;  
+}
+.imgPlusPop
+{
+    width: 38%;
+    height: 93.5%;
+    margin: 4.5px;
+    margin-right: 0px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    object-fit: cover;
+}
+.boxDescriptionPop
+{
+    display: flex;
+    flex-direction: column;
+
+}
+.descriptionPlusPop
+{
+    flex: 2;
+}
+.notationPop
+{
+    color: #0065FC;
+    font-size: 13px;
+    margin-left: 20px;
+    letter-spacing: -1.5px;
+
+    flex: 0.5;
+}
+
+
+
+/***définie les box contenant les activités de la section "activités à marseille"***/
+.boxActv
+{
+    height: 440px;
+    width: 23%;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+}
+/***mise en page des images des 2 plus grandes box***/
+.imgGrdBoxActv
+{
+    object-fit: cover;
+    height: 87%;
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}   
+/***mise en page des titres des box***/
+.h3Activités
+{
+    font-size: 17px;
+    margin-left: 15px;
+}
+
+
+.boxActvTablette
+{
+    background-color: white;
+    border-radius: 20px;
+    width: 250px;
+    height: 45%;
+    box-shadow:  0px 0px 20px #CDCDCD ;  
+}
+/***celui-ci met en page les images du conteneur***/
+.imgActvTablette
+{
+    width: 100%;
+    height: 75%;
+    object-fit: cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+/***rajoute les embrages sous les boxs de la sections "Activités à marseille"***/
+.shadow
+{
+    box-shadow: 0px 0px 20px #CDCDCD; 
+} 
+
+
+
+/*******************************************************************                READAPTATION                 ***********************************************************************************/
+
+
+@media screen and (max-width: 1400px)
+{
+
+
+
+.boxMarseille
+{
+    width: 200px;
+    height: 38%;
+}
+.imgMarseille
+{
+    width: 95.5%;
+    height: 95px;
+}
+.h3Marseille
+{
+    font-size: 16px;
+}
+.pMarseille
+{
+    font-size: 15px;
+}
+.notation
+{
+    font-size: 12px;
+}
+
+
+.boxPlusPop
+{
+    width: 90%;
+    height: 140px; 
+}
+.imgPlusPop
+{
+    width: 38%;
+    height: 130.5px;
+}   
+
+}
+
+@media screen and (max-width: 1220px)
+{
+
+.boxActv
+{
+    height: 310px;
+    width: 210px;
+}
+.h3Activités
+{
+    font-size: 14px;
+}
+
+.h2SectionsHautes
+{
+    font-size: 18px;
+}
+
+
+
+}
+
+@media screen and (max-width: 1161px)
+{
+
+    .boxMarseille
+    {
+        width: 180px;
+        height: 35%;
+    }
+    .imgMarseille
+    {
+        width: 95.5%;
+        height: 85px;
+    }
+    .h3Marseille
+    {
+        font-size: 14px;
+    }
+    .pMarseille
+    {
+        font-size: 14px;
+    }
+    .notation
+    {
+        font-size: 11px;
+    }   
+    
+}
+
+
+@media screen and (max-width: 1051px) {
+
+    .boxMarseille
+    {
+        width: 168px;
+        height: 35%;
+    }
+    .imgMarseille
+    {
+        width: 95.5%;
+        height: 85px;
+    }
+    .h3Marseille
+    {
+        font-size: 13px;
+    }
+    .pMarseille
+    {
+        font-size: 13px;
+    }
+    .notation
+    {
+        font-size: 10px;
+    }  
+    
+}
+/**************************      FIN READAPTATION     *******************************/
+
+
+/******************************       VERSION TABLETTE      ***********************/
+@media screen and (max-width: 992px)
+{
+    .h2SectionsHautes
+{
+    margin-top: 40px;
+    margin-left: 40px;
+    margin-bottom: 30px;
+    font-size: 27px;
+}
+
+/***regroupe la mise en page des box des hébergements à marseille***/
+
+/***celui-ci est le conteneur des hébergements***/
+.boxMarseille
+{
+    background-color: white;
+    border-radius: 20px;
+    width: 250px;
+    height: 45%;
+    box-shadow:  0px 0px 20px #CDCDCD ;  
+}
+/***celui-ci met en page les images du conteneur***/
+.imgMarseille
+{
+    width: 96.5%;
+    height: 115px;
+    object-fit: cover;
+    margin-left: 4px;
+    margin-right: 4px;
+    margin-top: 4px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+/***celui-ci les titres***/
+.h3Marseille
+{
+    font-size: 18px;
+    margin-left: 20px;
+    position: relative;
+    bottom: 10px;
+}
+/***celui-ci les prix***/
+.pMarseille
+{
+    font-size: 15px;
+    margin-left: 20px;
+    position: relative;
+    bottom: 24.5px;
+}
+/*** enfin celui-ci la div contenant les étoiles de notation***/
+.notation
+{
+    font-size: 13px;
+    margin-left: 20px;
+    color: #0065FC;
+    position: relative;
+    bottom: 35px;
+    letter-spacing: -1.5px;
+}
+
+
+/***regroupe la mise en page des box des hébergements les plus populaires --- même procédé que ci-dessus***/
+
+.boxPlusPop
+{
+    width: 90%;
+    height: 140px;
+    display: flex;
+    border-radius: 20px;
+    background-color: white;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 20px;
+    box-shadow:  0px 0px 20px #CDCDCD ;  
+}
+.imgPlusPop
+{
+    width: 38%;
+    height: 130px;
+    margin: 5px;
+    margin-right: 0px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    object-fit: cover;
+}
+.boxDescriptionPop
+{
+    display: flex;
+    flex-direction: column;
+
+}
+.descriptionPlusPop
+{
+    flex: 2;
+}
+.notationPop
+{
+    color: #0065FC;
+    font-size: 13px;
+    margin-left: 20px;
+    letter-spacing: -1.5px;
+
+    flex: 0.5;
+}
+
+}
+
+/*******************************************************************                VERSION MOBILE                 ***********************************************************************************/
+
+
+
+@media screen and (max-width: 768px)
+{
+
+
+/***********GENERAL********/
+
+
+/***margination pour la version mobile***/
+
+.marginNone
+{
+    margin-right: 0%;
+    margin-left: 0%;
+}
+
+
+
+/************HEADER*************/
+
+
+.bulleFiltres
+{
+    z-index: 1;
+    left: 0px;
+    font-size: 18px;
+    line-height: 45px;
+    width: 45px;
+}
+.filtresB
+{
+    float: right;
+    position: relative;
+    right: 40px;
+    height: 45px;
+    font-size: 15px;
+    padding-right: 20px ;
+    padding-left: 45px;
+
+}
+
+.boxF
+{
+    margin-right: -30px;
+    margin-bottom: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+/************MAIN*************/
+
+
+.h2SectionsHautes
+{
+    font-size: 20px;
+    margin-left: 20px;
+    margin-bottom: 25px;
+}
+
+.boxMarseille
+{
+    width: 90%;
+    height: 200px;
+}
+.imgMarseille
+{
+    width: 97.5%;
+}
+.h3Marseille
+{
+    font-size: 16px;
+}
+.pMarseille
+{
+    font-size: 14px;
+}
+
+
+}

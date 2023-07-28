@@ -1,0 +1,401 @@
+/****mise en page du logo et du Menu***/
+
+.logonav
+{
+    display: flex;
+    margin-bottom: 20px;
+    margin-top: 20px;
+
+}
+
+
+
+/****mise en page du logo***/
+
+.encadreLogo
+{
+    flex: 4;
+    align-items: center;
+}
+.logo
+{
+    width: 130px;
+    height: 65px;
+    position: relative;
+    top: 15px;
+}
+
+
+
+/****mise en page du Menu***/
+
+nav
+{
+    display: flex;
+    flex: 1.5;
+    justify-content: space-between ;
+    text-align: center;
+    position: relative;
+    left: 30px;
+    
+}
+.nav
+{
+    flex: 1;
+    font-size: 18px;
+    padding: 41px;
+    padding-left: 20px;
+    padding-right: 20px;
+    
+}
+
+.nav:hover
+{
+    border-top: #0065FC solid 3px;
+    color: #0065FC;
+}
+
+
+
+/****mise en page de l'intitulé du site****/
+
+.headerH1
+{
+    margin-top: 0px;
+    font-size: 23px;
+}
+.headerP
+{
+    font-size: 17px;
+    position: relative;
+    bottom: 10px;
+}
+
+
+
+/****mise en page de la barre de recherche****/
+
+.recherche
+{
+    display: flex;
+}
+.position
+{
+    height: 60px;
+    width: 60px;
+    text-align: center;
+    line-height: 60px;
+    font-size: 25px;
+    background-color: #F2F2F2;
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+}
+.searchBarre
+{
+    height: 60px;
+    width: 240px;
+    font-size: 19px;
+    font-weight: bold;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: #F2F2F2 solid 2px;
+}
+.rechercher
+{
+    height: 60px;
+    width: 140px;
+    font-size: 17px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    color: white;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+    background-color: #0065FC;
+    border: none;
+}
+.loupe
+{
+    display: none;
+}
+
+
+
+/****mise en page des Filtres****/
+
+.filtresF
+{
+    display: flex;
+    margin-top: 40px;
+}
+.filtresP
+{
+    font-size: 23px;
+    font-weight: bold;
+    position: relative;
+    bottom: 6px;
+}
+.filtres
+{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+    right: 30px;
+}
+
+
+
+
+/*****mise en page de l'icon info*****/
+
+.divInfo
+{
+    display: flex;
+    
+
+}
+.info
+ {
+     border:#D5D5D5 2px solid;
+     text-align: center;
+     line-height: 20px;
+     font-size: 12px;
+     color: #0065FC;
+     height: 20px;
+     width: 20px;
+     position: relative;
+     top: 15px;
+     border-radius: 50%;
+     margin-right: 10px;
+ }
+ .infoP
+ {
+     font-size: 17px;
+ }
+
+ @media screen and (max-width: 992px)
+ {
+ 
+.logonav
+{
+         flex-direction: column;
+         text-align: center;
+         margin: 0px;
+}  
+.logo
+ {
+     margin-top: 40px;
+     margin-bottom: 20px;
+     position:relative;
+     top: 0px;
+     width: 200px;
+     height: 100px;
+ }
+
+
+ nav
+ {
+     margin-bottom: 70px;
+     position: relative;
+     left: 0px;
+ }
+ .nav
+{
+    padding-top: 25px;
+    padding-bottom: 20px;
+    font-size: 25px;
+    border-bottom: #F2F2F2 solid 5px;
+}
+.nav:hover
+{
+    color:#0065FC;
+    border-bottom: #0065FC solid 5px;
+    border-top: none;
+}
+
+
+.filtresF
+{
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+
+.searchBarre
+{
+    width: 75%;
+}
+
+}
+     
+
+
+
+
+/*******************************************************************                VERSION MOBILE                 ***********************************************************************************/
+
+
+
+@media screen and (max-width: 768px)
+{
+
+  
+/**************mise en page du logo et du Menu*******************/    
+
+header
+{
+    margin-bottom: 740px;
+}
+
+.logonav
+{
+    flex-direction: column;
+    text-align: center;
+    margin: 0px;
+}
+
+
+
+/****mise en page du logo***/
+
+.encadreLogo
+{
+text-align: center;
+}
+.logo
+{
+    margin-top: 20px;
+    margin-bottom: 0px;
+    position:relative;
+    top: 0px;
+    width: 100px;
+    height: 50px;
+}
+
+
+
+/****mise en page du Menu***/
+
+nav
+{
+    margin-bottom: 0px;
+}
+.nav
+{
+    padding-top: 25px;
+    padding-bottom: 20px;
+    font-size: 15px;
+}
+
+
+
+/****mise en page de l'intitulé***/
+
+.description
+{
+    margin-top: 30px;
+}
+.headerH1
+{
+    font-size: 21px;
+}
+.headerP
+{
+    font-size: 15px;
+    position: relative;
+    bottom: 0px;
+}
+
+
+
+/****mise en page de la barre de recherche***/
+
+.recherche
+{
+    margin-top: 30px;
+    margin-right: 0%;
+}
+.position
+{
+    width: 60px;
+    height: 50px;
+    font-size: 20px;
+    line-height: 50px;
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+}
+.searchBarre
+{
+    width: 75%;
+    padding-right: 50px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 18px;
+}
+.rechercher
+{
+    display: none;
+}
+.loupe
+{
+    display: block;
+    height: auto;
+    width: 55px;
+    color: white;
+    line-height: 50px;
+    font-size: 16px;
+    text-align: center;
+    border-radius: 15px;
+    background-color: #0065FC;
+
+    position: relative;
+    right: 20px;
+}
+
+
+
+/****mise en page des filtres***/
+
+.filtresF
+{
+    flex-direction: column;
+    margin-top: 15px;
+}
+.filtresP
+{
+    font-size: 19px;
+    margin-bottom: 10px;
+}
+.filtres
+{
+    margin: 0px;
+
+
+    position: relative;
+    right: 0px;
+}
+
+
+
+
+/*****mise en page de l'icon info*****/
+
+.divInfo
+{
+    margin-top: 10px;
+}
+.info
+{
+    line-height: 22px;
+    font-size: 12px;
+    height: 22px;
+    width: 30px;
+    top: 10px;
+    margin-right: 10px;
+}
+.infoP
+{
+    font-size: 15px;
+}
+
+}

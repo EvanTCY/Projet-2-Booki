@@ -1,0 +1,399 @@
+/***mise en page des section "hébergement à marseille" et "les plus populaires"***/
+
+.sectionsHautes
+{
+    display: flex;
+    justify-content: space-around;
+    height: 600px;
+    margin-top: 40px;
+}
+
+    /***première section haute***/
+.hébergementsMarseille
+{
+    flex: 2;
+    background-color: #F2F2F2;
+    border-radius: 20px;
+    margin-right: 40px;
+}
+        /***regroupe les hébergements et leur description --- la mise en page des box hébergements se trouve dans le dossier "general.css***/
+.boxMèreMarseille
+{
+    height: 450px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 0px;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+.afficherPlus
+{
+    font-weight: bold;
+    font-size: 18px;
+    margin-left: 40px;
+    
+}
+
+    /***deuxième section haute***/
+.lesPlusPopulaires
+{
+    flex: 1;
+    background-color: #F2F2F2;
+    border-radius: 20px;
+    margin-left: 10px;
+
+}
+    /***intègre liétoile noir à côté du titre de la section***/
+.divPourStarPopulaires
+{
+    display: flex;
+}
+
+.h2pluspop
+{
+    flex: 4;
+}
+.starPopulaires
+{
+    flex: 1;
+    font-size: 22px;
+    padding-top: 40px;
+    text-align: center;
+    
+}
+
+
+
+/***section basse qui correspond à "activités à marseille***/
+.activités
+{
+    margin-top: 70px;
+    margin-bottom: 100px;
+}
+    /***titres de la section***/
+.h2Activités
+{
+    font-size: 22px;
+    margin-bottom: 30px;
+}
+    /***contient l'ensemble des box activité***/
+.conteneurBoxActv
+{
+    height: 400px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/***concerne les 4 petites box de la section -- les 2 autres grandes sont mises en page dans le dossier "general.css"***/ 
+.fortPomègues
+{
+    height: 240px;
+    border-radius: 20px;
+}
+.imgPomègues
+{
+    object-fit: cover;
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+
+    height: 75%;
+}
+.h3Pomègues
+{
+    position: relative;
+    bottom: 5px;
+}
+
+.ilesFrioul
+{
+    height: 160px;
+    border-radius: 20px;
+}
+.imgFrioul
+{
+    object-fit: cover;
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+
+    height: 67%;
+}
+.h3Frioul
+{
+    position: relative;
+    bottom: 5px;
+}
+
+.notreDame
+{
+    height: 210px;
+    border-radius: 20px;
+}
+.imgDame
+{
+    object-fit: cover;
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+
+    height: 70%;
+}
+.h3Dame
+{
+    position: relative;
+    bottom: 5px;
+}
+
+.parcLongchamp
+{
+    height: 190px;
+    border-radius: 20px;
+}
+.imgLongchamp
+{
+    object-fit: cover;
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+
+    height: 72%;
+}
+.h3Longchamp
+{
+    position: relative;
+    bottom: 5px;
+}
+
+.boxMèreActivité    
+{
+display: none;
+}
+
+
+    
+
+
+
+@media screen and (max-width: 1220px)
+{
+
+    .activités
+{
+    margin-bottom: 0px;
+}
+
+.fortPomègues
+{
+    height: 160px;
+}
+.h3Pomègues
+{
+    position: relative;
+    bottom: 5px;
+}
+
+.ilesFrioul
+{
+    height: 130px;
+}
+.h3Frioul
+{
+    position: relative;
+    bottom: 5px;
+}
+
+.notreDame
+{
+    height: 140px;
+}
+.h3Dame
+{
+    position: relative;
+    bottom: 5px;
+}
+
+.parcLongchamp
+{
+    height: 150px;
+}
+.h3Longchamp
+{
+    position: relative;
+    bottom: 5px;
+}
+
+
+.h2Activités
+{
+    font-size: 18px;
+}
+
+}
+
+
+
+
+
+/*******************************************************************                VERSION TABLETTE                 ***********************************************************************************/
+@media screen and (max-width: 992px)
+{
+.sectionsHautes
+{
+    flex-direction: column;
+    margin-top: 330px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.hébergementsMarseille
+{
+    margin-left: 0px;
+    margin-right: 0px;
+    width: 100%;
+    background-color: white;
+    margin-bottom: 50px;
+}
+.boxMèreMarseille
+{
+    margin-left: 0%;
+    margin-right: 0%;
+}
+
+.lesPlusPopulaires
+{
+    margin-left: 0px;
+    border-radius: 0px;
+}
+
+
+.activités
+{
+    margin-top: 370px;
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+.h2Activités
+{
+    margin-left: 40px;
+}
+
+.conteneurBoxActv
+{
+display: none;
+}
+.boxMèreActivité
+{
+    display: block;
+    height: 450px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 10px;
+    margin-right: 0px;
+    margin-right: 0px;
+}
+
+.h2Activités
+{
+    font-size: 27px ;
+}
+
+
+}
+
+/*******************************************************************                VERSION MOBILE                 ***********************************************************************************/
+
+
+
+@media screen and (max-width: 768px)
+{
+
+.sectionsHautes
+{
+    flex-direction: column-reverse;
+    margin-top: 720px;
+}
+
+
+.lesPlusPopulaires
+{
+    margin-left: 0px;
+    margin-top: 0px;
+   
+}
+
+
+.hébergementsMarseille
+{
+    margin-right: 0px;
+    border-radius: 0px;
+    height: 2000px;
+    background-color: white;
+}
+.boxMèreMarseille
+{
+    height: 1300px;
+    margin-bottom: 15px;
+}
+.afficherPlus
+{
+    font-size: 16px;
+    margin-left: 20px;
+}
+
+
+
+
+.activités
+{
+    margin-top: 725px;
+    height: 1385px;
+}
+.h2Activités
+{
+    font-size: 20px;
+    margin-bottom: 30px;
+    margin-left: 20px;
+}
+.conteneurBoxActv
+{
+    display: block;
+    flex-direction: column;
+    height: 1380px;
+}
+
+.boxActv
+{   
+    height: 440px;
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 90%;
+}
+/***redéfinie toute les box de la section "activité à marseille***/
+.boxActivités
+{
+    height: 200px;
+    margin-bottom: 20px;
+
+}
+.imgBox
+{
+    height: 75%;
+}
+
+
+.boxMèreActivité
+{
+    display: none;
+}
+
+.starPopulaires
+{
+    font-size: 19px; 
+}
+
+
+}
